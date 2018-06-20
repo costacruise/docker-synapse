@@ -15,6 +15,8 @@ RUN apk add --no-cache su-exec libffi zlib zlib libressl libjpeg-turbo libpq lib
 
 VOLUME ["/data"]
 
+COPY homeserver.yaml /conf/homeserver.yaml
+
 EXPOSE 8008/tcp 8448/tcp
 
 ENTRYPOINT ["/start.py"]
