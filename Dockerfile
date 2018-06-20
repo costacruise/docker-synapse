@@ -1,6 +1,6 @@
 FROM docker.io/python:2-alpine3.7
 
-ARG VERSION=0.30.0
+ARG VERSION=0.31.2
 
 ADD "https://github.com/matrix-org/synapse/archive/v$VERSION.tar.gz" /
 RUN tar -xf "/v$VERSION.tar.gz" && mv /synapse-$VERSION/ /synapse
